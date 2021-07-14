@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Tell the computer I am using HTML 5-->
+<html>
+
+<head>
+    <title>Lab: 01b</title>
+</head>
+
+<body>
+    <h1>Welcome to my page!</h1>
+    <img src="https://i.pinimg.com/originals/6c/fc/73/6cfc733ffc459d0f4f830d4d0de1303b.png" alt="Hello greeting" width="500" height="600">
+    <p>My name is Christine and I'm currently working on transitioning my career to be a software developer! As hard as it may be and as much as I know I'm going to struggle, the challenge is what keeps me going. It just means I'm growing! Learning to be comfortable with being uncomfortable. I love sushi, petting all the dogs I possibly can and plants!</p>
+
+    <h2 style="color: purple">Enough about me. Lets get to know you.</h2>
+
+        <h3>
+            <span>Tell me a little bit about yourself:</span>
+        </h3>
+
+        h3 { text-align: center; }
+        h3 span { background-color:yellow; }
+
+        <ul>
+        <p style="color:blue">What is your name?</p>
+        <p style="color:coral">What is your favorite color?</p>
+        <p style="color:yellow">What is your favorite animal?</p>
+        <p style="color:green">What is your favorite food?</p>
+        </ul>
+
+    <script>
+        // 1. greet the user
+        let username = prompt("What's your name?");
+        // Send variable value to the console so we can look at it.
+        console.log("User's name is: " + username);
+
+        // concatenate the variable with the string "Hello":
+        alert("Hello " + username + "!"); 
+        
+        // 2. ask the user what their favorite color is
+        let color = prompt("What's your favorite color");
+        // Send variable value to the console so we can look at it.
+        console.log("User's favorite color is: " + color); 
+        
+        // concatenate the variable with the string "is one of my favorite colors also!":
+        alert(color + " is one of my favorite colors also" + "!");
+        
+        // 3. ask user what their favorite animal is
+        let animal = prompt("What's your favorite animal?");
+        console.log("User's favorite animal is: " + animal);
+        
+        alert("I like " + animal + " also" + "!");
+        
+        // 4. ask user what their favorite food is
+        let food = prompt("What's you favorite food");
+        console.log("User's favorite food is: " + food);
+        
+        alert(food + "is YUMMY" + "!" + " Good choice" + "!" + "It sounds like we have the same favorite color of " + color + "." + "Not so much the same favorite " + animal + "," + "but that's ok" + "." + "It was great meeting you " + username);
+
+    </script>
+</body>
+
+</html>
